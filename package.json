@@ -1,0 +1,49 @@
+{
+  "name": "come-come-api",
+  "version": "1.0.0",
+  "description": "API de restaurantes",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node jest.startup.ts"
+  },
+  "author": "Christian Murata",
+  "license": "ISC",
+  "jest": {
+    "globals" : {
+      "address" : "http://localhost:3001"
+    },
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "4.0.1",
+    "mongoose": "5.9.7",
+    "restify": "8.5.1",
+    "restify-errors": "8.0.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "3.0.0",
+    "@types/jest": "25.2.1",
+    "@types/mongoose": "5.7.8",
+    "@types/restify": "8.4.2",
+    "@types/restify-errors": "4.3.3",
+    "@types/supertest": "2.0.9",
+    "jest": "25.5.4",
+    "jest-cli": "25.5.4",
+    "supertest": "4.0.2",
+    "ts-jest": "25.5.0",
+    "ts-node": "8.10.1",
+    "typescript": "3.8.3"
+  }
+}
